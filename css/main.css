@@ -1,0 +1,607 @@
+* {
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: system-ui;
+    font-weight: 600;
+}
+
+html {
+    font-size: 10px;
+}
+
+body {
+    /* font-family: 'Open Sans', sans-serif; */
+    font-family: 'Roboto', sans-serif;
+}
+
+p {
+    font-size: 1.6rem;
+    line-height: 1.5;
+}
+
+a {
+    text-decoration: none;
+
+}
+
+ul,
+li {
+    list-style: none;
+
+}
+
+.btn-green {
+    background-color: #68ad68;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #68ad68;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.btn-green span:last-child {
+    display: none;
+}
+
+.btn-green:hover {
+    transition: .4s;
+    border: 2px dashed #68ad68;
+    background-color: #fff;
+    color: #68ad68;
+}
+
+.btngreen:active {
+    background-color: #68ad68;
+}
+
+
+
+.btn-wh {
+    background-color: transparent;
+    padding: 14px 40px;
+    color: #fff;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    cursor: pointer;
+    border-radius: 10px;
+    border: 2px dashed #68ad68;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    transition: .4s;
+}
+
+.btn-wh span:last-child {
+    display: none;
+}
+
+.btn-wh:hover {
+    transition: .4s;
+    border: 2px dashed #68ad68;
+    background-color: #fff;
+    color: #68ad68;
+}
+
+.btn-wh:active {
+    background-color: #68ad68;
+}
+
+
+
+/* .btn-green {
+    background: #68ad68;
+    color: #fff;
+    padding: 20px 40px;
+    border: 3px solid #68ad68;
+    border-radius: 25px;
+
+} */
+/* 
+.btn-wh {
+    height: 50px;
+    width: 200px;
+    position: relative;
+    background-color: transparent;
+    cursor: pointer;
+    border: 2px solid #252525;
+    overflow: hidden;
+    border-radius: 30px;
+    color: #991515;
+    transition: all 0.5s ease-in-out;
+}
+
+.btn-wh {
+    position: relative;
+    margin: auto;
+    padding: 12px 18px;
+    transition: all 0.2s ease;
+    border: none;
+    background: none;
+}
+
+.btn-wh:before {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    border-radius: 50px;
+    background: #b1dae7;
+    width: 45px;
+    height: 45px;
+    transition: all 0.3s ease;
+}
+
+.btn-wh span {
+    position: relative;
+    font-family: "Ubuntu", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+    color: #234567;
+}
+
+.btn-wh svg {
+    position: relative;
+    top: 0;
+    margin-left: 10px;
+    fill: none;
+    stroke-linecap: round;
+    stroke-linejoin: round;
+    stroke: #234567;
+    stroke-width: 2;
+    transform: translateX(-5px);
+    transition: all 0.3s ease;
+}
+
+.btn-wh:hover:before {
+    width: 100%;
+    background: #b1dae7;
+}
+
+.btn-wh:hover svg {
+    transform: translateX(0);
+}
+
+.btn-wh:active {
+    transform: scale(0.95);
+} */
+
+
+.btn-wh-top {
+    background: transparent;
+    color: #fff;
+    padding: 10px 20px;
+    border: 3px solid #fff;
+    border-radius: 10px;
+    border: 3px dashed #fff;
+    border-radius: 20px;
+}
+
+.btn-wh-top:hover {
+    background: linear-gradient(#5d8563, #ff0000);
+}
+
+/* 
+.btn-wh {
+    background: transparent;
+    color: #fff;
+    padding: 20px 40px;
+    border: 3px solid #fff;
+    border-radius: 25px;
+
+} */
+
+
+
+/* top section  */
+
+/* navigation section */
+
+/* nav mobile section */
+
+/* .nav-mobile {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    background-color: rgba(255, 255, 255, 0.47);
+    padding: 15px;
+}
+
+.nav-mobile a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.mill {
+    margin-right: 50px;
+}
+
+.list {
+    list-style: none;
+    display: flex;
+    gap: 25px;
+}
+
+#toggler,
+.nav-mobile label {
+    display: none;
+} */
+
+/* nav mobile section */
+
+.body-section .nav-decktop {
+    position: fixed;
+    width: 100%;
+    background: var(--gradient);
+    padding: 0px 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+}
+
+.body-section .nav-decktop div h1 {
+    font-size: 35px;
+
+}
+
+
+.body-section .nav-decktop a {
+    text-transform: uppercase;
+    font-size: 1.2em;
+    font-weight: 700;
+
+}
+
+.body-section .nav-decktop .sin-in {
+    margin-right: 20px;
+
+}
+
+.body-section .nav-decktop .mem-im a {
+    margin-left: 30px;
+
+}
+
+.body-section .nav-decktop a:hover {
+    border-bottom: 2px solid hsl(0, 0%, 100%);
+
+}
+
+.body-section .nav-decktop div a {
+    font-size: 20px;
+    color: #fff;
+
+}
+
+/* navigation section */
+
+
+/* body section  */
+
+.body-section {
+    background: url(../assests/img/pexels-chan-walrus-958545.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
+}
+
+#comments {
+    font-size: 40px;
+    color: #2d682d;
+    font-weight: 900;
+    position: absolute;
+    right: 50px;
+    bottom: 100px;
+}
+
+.body-text {
+    color: #fff;
+    padding-top: 400px;
+    padding-left: 20px;
+
+}
+
+.body-text h2 {
+    font-size: 60px;
+    font-weight: bolder;
+    margin-bottom: 20px;
+
+}
+
+.body-text p {
+    font-size: 20px;
+    margin-bottom: 20px;
+
+}
+
+.body-btn {
+    margin-left: 0px;
+    margin-bottom: 40px;
+
+}
+
+/* body section  */
+
+
+/* top section  */
+
+
+/* about-us section */
+.aboutus-section {
+    width: 95%;
+    margin: 0 auto;
+    margin-top: 40px;
+    display: flex;
+    background-color: li;
+
+}
+
+.aboutus-section .aboutus-text {
+    color: #3f230f;
+    width: 40%;
+
+}
+
+.aboutus-section .aboutus-text h2 {
+    font-size: 60px;
+    margin-bottom: 50px;
+    margin-top: 20px;
+    line-height: 100px;
+
+}
+
+.aboutus-section .aboutus-text p {
+    font-size: 20px;
+    line-height: 50px;
+
+}
+
+.aboutus-section .aboutus-text span {
+    font-size: 20px;
+    font-weight: bolder;
+    display: block;
+    margin-top: 50px;
+    margin-bottom: 40px;
+}
+
+.aboutus-section .aboutus-text span i {
+    font-size: 10px;
+    margin-right: 10px;
+    /* align-items: center; */
+}
+
+.aboutus-section .aboutus-img {
+    width: 60%;
+    overflow: hidden;
+    background: url(../assests/img/7c170f858adf8a8b1cf8e57b1e6077137449988b-1875x2500.jpg);
+    background-position: center;
+    border-radius: 10px;
+    height: 760px;
+    float: left;
+
+}
+
+/* about-us section */
+
+
+/* nasty trash section  */
+
+.nasty-trash {
+    background-color: #2d682d;
+    width: 100%;
+    margin-top: 20px;
+    color: #fff;
+    display: block;
+    margin-bottom: 30px;
+
+}
+
+.nasty-trash div {
+    width: 50%;
+    margin-left: 50.8em;
+    padding: 50px 0;
+
+}
+
+.nasty-trash div h3 {
+    font-size: 50px;
+    margin-bottom: 20px;
+
+}
+
+.nasty-trash div p {
+    margin-bottom: 20px;
+    line-height: 20px;
+
+}
+
+/* nasty trash section  */
+
+
+/* wasted food section  */
+.wasted-food-vs-memin {
+    background-color: #c7d8a6;
+    padding-top: 30px;
+
+}
+
+.wasted-food {
+    background-color: #c4bebe;
+    display: flex;
+    justify-content: center;
+    padding: 80px 0px;
+    align-items: center;
+    border-radius: 15px;
+    width: 95%;
+    margin: 0 auto;
+
+}
+
+.wasted-food .wasted-food-h1 {
+    color: #3f230f;
+    font-size: 80px;
+    font-weight: 700;
+    margin-right: 90px;
+
+}
+
+.wasted-food div p {
+    font-size: 20px;
+    font-weight: 600;
+    margin-bottom: 30px;
+
+}
+
+.wasted-food div p span {
+    color: #2d682d;
+
+}
+
+/* wasted food section  */
+
+
+/* member includes section  */
+
+.memin-section {
+    background: url(../assests/img/pexels-alexy-almond-3758133.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 15px;
+    width: 95%;
+    margin: 0 auto;
+    padding: 100px 0;
+    margin-top: 20px;
+    margin-bottom: 30px;
+}
+
+.memin-section .memin-text {
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+
+}
+
+.memin-section .memin-text h3 {
+    font-size: 5em;
+    color: #3f230f;
+    font-weight: 900;
+    margin-bottom: 5px;
+
+}
+
+.memin-section .memin-text p {
+    font-size: 2.2em;
+    justify-content: center;
+    color: #3f230f;
+    margin-bottom: 10px;
+
+}
+
+/* member includes section  */
+
+
+
+/* stay in the loop section  */
+
+.stayloop-section {
+    background-color: #aeb387;
+    display: flex;
+    padding: 100px;
+    justify-content: center;
+    color: #2d682d;
+}
+
+.stayloop-section h1 {
+    font-size: 60px;
+    font-weight: 800;
+    margin-right: 60px;
+}
+
+
+.stayloop-section form {
+    padding-top: 25px;
+}
+
+.stayloop-section form label {
+    font-size: 20px;
+}
+
+.stayloop-section form input {
+    width: 500px;
+    height: 25px;
+    display: block;
+    /* border-bottom: 4px solid black; */
+}
+
+.stayloop-section form p span {
+    text-decoration: underline;
+}
+
+/* stay in the loop section  */
+
+/* information section */
+
+.info-section {
+    background-color: #2d682d;
+    display: block;
+}
+
+/* .info-section .info-table table {
+    gap: 90px;
+} */
+
+.info-section .info-table {
+    width: 80%;
+    margin: 0 auto;
+    text-align: justify;
+    padding-top: 50px;
+    justify-content: space-around;
+    /* border: 3px solid black; */
+}
+
+.info-section .info-table tr {
+    line-height: 40px;
+    /* display: flex;s */
+    /* flex-wrap: inherit; */
+}
+
+.info-section .info-table tr th {
+    font-size: 15px;
+    color: #9cc54a;
+}
+
+.info-section .info-table tr td {
+    color: #fff;
+    font-size: 22px;
+}
+
+/* teble buttom section */
+
+.info-section .buttom-section table {
+    margin-top: 100px;
+}
+
+.info-section .buttom-section table th {
+    font-size: 15px;
+    font-weight: 400;
+    color: #fff;
+}
+
+.info-section .buttom-section p {
+    color: #fff;
+    font-size: 14px;
+    font-weight: 0;
+    padding-top: 30px;
+}
+
+/* teble buttom section */
+
+/* information section */

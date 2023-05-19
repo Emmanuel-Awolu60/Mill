@@ -1,0 +1,150 @@
+@media screen and (max-width: 992px) {
+
+
+
+    /* nav mobile section */
+    /* .menu {
+         width: 100%;
+        max-height: 0;
+        overflow: hidden; 
+        display: flex !important;
+    }
+
+    .list {
+        flex-direction: column;
+        align-items: center;
+        padding: 20px;
+    }
+
+    .nav-mobile label {
+        display: inline-flex;
+        align-items: center;
+        cursor: pointer;
+    }
+
+    #toggler:checked~.menu {
+        max-height: 100%;
+    }  */
+
+    /* nav mobile section */
+    .body-section {
+        /* width: 99%; */
+        margin: 0 auto;
+    }
+
+    .body-text {
+        color: #fff;
+        padding-top: 20px;
+        padding-left: 20px;
+
+    }
+
+    .aboutus-section {
+        flex-direction: column-reverse;
+    }
+
+    .aboutus-section .aboutus-text {
+        width: 100%;
+    }
+
+    .body-section .nav-decktop {
+        display: none;
+    }
+
+    .aboutus-section .aboutus-img {
+        width: 99%;
+        /* height: 500px; */
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+
+    .nasty-trash {
+        padding-bottom: 10px;
+
+    }
+
+    .nasty-trash div {
+        width: 100%;
+        margin-left: 15em;
+        padding: 10px;
+        margin-top: 20px;
+    }
+
+    .wasted-food {
+        display: block;
+        /* justify-content: center; */
+
+    }
+
+    .wasted-food .wasted-food-h1 {
+        width: 60%;
+        margin: 0 auto;
+        margin-bottom: 50px;
+    }
+
+    .wasted-food .wastedtext {
+        width: 60%;
+        margin: 0 auto;
+    }
+
+    .stayloop-section {
+        display: block;
+        padding: 80px 50px;
+    }
+
+
+    .stayloop-section form input {
+        width: 300px;
+    }
+
+
+    .info-table table th {
+        display: block;
+    }
+
+    .info-table table td {
+        display: block;
+    }
+
+    .info-section .buttom-section table {
+        width: 100px;
+    }
+
+}
+
+@media screen and (max-width: 450px) {
+
+    .nasty-trash {
+        width: 98.5%;
+        margin: 0 auto;
+        border-radius: 20px;
+        padding-left: 10px;
+    }
+
+    .nasty-trash div {
+        width: 100%;
+        margin-left: 0em;
+        padding: 0;
+
+    }
+
+    .wasted-food {
+        display: block;
+    }
+
+    .wasted-food .wasted-food-h1 {
+        width: 100%;
+        font-size: 60px;
+        padding-left: 10px;
+    }
+
+    .wasted-food .wastedtext {
+        width: 100%;
+        padding-left: 10px;
+    }
+
+
+    .memin-section .memin-text {
+        width: 100%;
+    }
+}

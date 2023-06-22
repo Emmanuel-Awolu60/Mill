@@ -24,13 +24,11 @@ p {
 
 a {
     text-decoration: none;
-
 }
 
 ul,
 li {
     list-style: none;
-
 }
 
 .btn-green {
@@ -92,87 +90,6 @@ li {
 }
 
 
-
-/* .btn-green {
-    background: #68ad68;
-    color: #fff;
-    padding: 20px 40px;
-    border: 3px solid #68ad68;
-    border-radius: 25px;
-
-} */
-/* 
-.btn-wh {
-    height: 50px;
-    width: 200px;
-    position: relative;
-    background-color: transparent;
-    cursor: pointer;
-    border: 2px solid #252525;
-    overflow: hidden;
-    border-radius: 30px;
-    color: #991515;
-    transition: all 0.5s ease-in-out;
-}
-
-.btn-wh {
-    position: relative;
-    margin: auto;
-    padding: 12px 18px;
-    transition: all 0.2s ease;
-    border: none;
-    background: none;
-}
-
-.btn-wh:before {
-    content: "";
-    position: absolute;
-    top: 0;
-    left: 0;
-    display: block;
-    border-radius: 50px;
-    background: #b1dae7;
-    width: 45px;
-    height: 45px;
-    transition: all 0.3s ease;
-}
-
-.btn-wh span {
-    position: relative;
-    font-family: "Ubuntu", sans-serif;
-    font-size: 18px;
-    font-weight: 700;
-    letter-spacing: 0.05em;
-    color: #234567;
-}
-
-.btn-wh svg {
-    position: relative;
-    top: 0;
-    margin-left: 10px;
-    fill: none;
-    stroke-linecap: round;
-    stroke-linejoin: round;
-    stroke: #234567;
-    stroke-width: 2;
-    transform: translateX(-5px);
-    transition: all 0.3s ease;
-}
-
-.btn-wh:hover:before {
-    width: 100%;
-    background: #b1dae7;
-}
-
-.btn-wh:hover svg {
-    transform: translateX(0);
-}
-
-.btn-wh:active {
-    transform: scale(0.95);
-} */
-
-
 .btn-wh-top {
     background: transparent;
     color: #fff;
@@ -181,60 +98,215 @@ li {
     border-radius: 10px;
     border: 3px dashed #fff;
     border-radius: 20px;
+    margin: 2px 0;
 }
 
 .btn-wh-top:hover {
     background: linear-gradient(#5d8563, #ff0000);
 }
 
-/* 
-.btn-wh {
-    background: transparent;
-    color: #fff;
-    padding: 20px 40px;
-    border: 3px solid #fff;
-    border-radius: 25px;
-
-} */
 
 
-
-/* top section  */
 
 /* navigation section */
+
 
 /* nav mobile section */
 
 /* .nav-mobile {
     display: flex;
-    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    background-color: rgba(255, 255, 255, 0.47);
-    padding: 15px;
-}
-
-.nav-mobile a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.mill {
-    margin-right: 50px;
-}
-
-.list {
-    list-style: none;
-    display: flex;
-    gap: 25px;
-}
-
-#toggler,
-.nav-mobile label {
+    padding: 0 20px;
+    background: var(--gradient);
     display: none;
+}
+
+.nav-mobile .mobile-text {
+    font-size: 35px;
+    font-family: 'Open Sans', sans-serif;
+    color: #ffffff;
+}
+
+.nav-mobile .nav-btnham {
+    display: flex;
+    gap: 20px;
+}
+
+.nav-mobile .hamburger {
+    margin-top: 10px;
+    height: 30px;
+    width: 30px;
+    display: flex;
+    align-items: center;
+}
+
+.nav-mobile .hamburger .menu {
+    height: 3px;
+    width: 100%;
+    background: #fff;
+    position: relative;
+}
+
+.nav-mobile .hamburger .menu::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    transform: translateY(-10px);
+}
+
+.nav-mobile .hamburger .menu::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: #fff;
+    position: absolute;
+    transform: translateY(10px);
+}
+
+.nav-mobile .hamburger .showburger .menu {
+    background: transparent;
+}
+
+.nav-mobile .hamburger .showburger .menu::after {
+    transform: rotate(45deg);
+}
+
+.nav-mobile .hamburger .showburger .menu::before {
+    transform: rotate(-45deg);
 } */
 
+.mobile-links-holder {
+    /* border: 3px solid black; */
+    position: fixed;
+    right: 0;
+    top: 0;
+    height: 100vh;
+    width: 50%;
+    /* background: var(--main-color); */
+    background: #5d8563;
+    transform: translateX(200%);
+    transition: all 0.8s ease;
+}
+
+.show-mobile-links-holder {
+    transform: translateX(0);
+}
+
+.mobile-links-holder ul {
+    list-style: none;
+}
+
+.mobile-links-holder a {
+    color: var(--white-color);
+    text-decoration: none;
+    display: block;
+    padding: 25px 0 25px 20px;
+}
+
+.mobile-active-link {
+    background: var(--white-color);
+    color: var(--main-color) !important;
+}
+
+.mobile-links-holder button {
+    border: 2px solid var(--white-color);
+    color: var(--white-color);
+    background: var(--main-color);
+    margin: 20px;
+}
+
+.nav-mobile {
+    /* border: 3px solid tomato; */
+    display: none;
+    justify-content: space-between;
+    padding: 10px 30px;
+    align-items: center;
+    /* background: var(--main-color); */
+    background-color: rgba(255, 255, 255, 0.07);
+    width: 100%;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.mobile-logo {
+    /* width: 200px;
+    height: 50px; */
+    /* border: 3px solid black; */
+    display: flex;
+    color: var(--white-color);
+    align-items: center;
+}
+
+.mobile-logo-cotainer {
+    border: 3px solid var(--white-color);
+    font-size: 25px;
+    padding: 5px;
+}
+
+.mobile-logo span {
+    font-size: 25px;
+    font-weight: bolder;
+    margin: 10px;
+}
+
+.hamburger {
+    /* border: 3px solid black; */
+    height: 25px;
+    width: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 6;
+}
+
+
+.showburger .menu {
+    background: transparent;
+}
+
+.showburger .menu::before {
+    transform: translateY(0) rotate(45deg);
+    background: var(--main-color);
+}
+
+.showburger .menu::after {
+    transform: translateY(0) rotate(-45deg);
+    background: var(--main-color);
+}
+
+
+.menu {
+    height: 3px;
+    width: 100%;
+    background: var(--white-color);
+    position: relative;
+}
+
+.menu::before {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: var(--white-color);
+    position: absolute;
+    transform: translateY(-10px);
+
+}
+
+.menu::after {
+    content: "";
+    width: 100%;
+    height: 3px;
+    background: var(--white-color);
+    position: absolute;
+    transform: translateY(10px);
+
+}
 /* nav mobile section */
+
 
 .body-section .nav-decktop {
     position: fixed;
@@ -249,7 +321,7 @@ li {
 
 .body-section .nav-decktop div h1 {
     font-size: 35px;
-
+    font-family: 'Open Sans', sans-serif;
 }
 
 
@@ -257,28 +329,23 @@ li {
     text-transform: uppercase;
     font-size: 1.2em;
     font-weight: 700;
-
 }
 
 .body-section .nav-decktop .sin-in {
     margin-right: 20px;
-
 }
 
 .body-section .nav-decktop .mem-im a {
     margin-left: 30px;
-
 }
 
 .body-section .nav-decktop a:hover {
     border-bottom: 2px solid hsl(0, 0%, 100%);
-
 }
 
 .body-section .nav-decktop div a {
     font-size: 20px;
     color: #fff;
-
 }
 
 /* navigation section */
@@ -299,14 +366,12 @@ li {
     color: #fff;
     padding-top: 400px;
     padding-left: 20px;
-
 }
 
 .body-text h2 {
     font-size: 60px;
     font-weight: bolder;
     margin-bottom: 20px;
-
 }
 
 .body-text p {
@@ -323,9 +388,7 @@ li {
 
 /* body section  */
 
-
 /* top section  */
-
 
 /* about-us section */
 .aboutus-section {
@@ -368,7 +431,6 @@ li {
 .aboutus-section .aboutus-text span i {
     font-size: 10px;
     margin-right: 10px;
-    /* align-items: center; */
 }
 
 .aboutus-section .aboutus-img {
@@ -379,7 +441,6 @@ li {
     border-radius: 10px;
     height: 760px;
     float: left;
-
 }
 
 /* about-us section */
@@ -394,26 +455,25 @@ li {
     color: #fff;
     display: block;
     margin-bottom: 30px;
-
 }
 
 .nasty-trash div {
     width: 50%;
     margin-left: 50.8em;
     padding: 50px 0;
-
 }
 
 .nasty-trash div h3 {
     font-size: 50px;
     margin-bottom: 20px;
-
 }
 
 .nasty-trash div p {
+    font-size: 20px;
+    font-weight: 400;
     margin-bottom: 20px;
-    line-height: 20px;
-
+    line-height: 25px;
+    word-spacing: 6px;
 }
 
 /* nasty trash section  */
@@ -423,7 +483,6 @@ li {
 .wasted-food-vs-memin {
     background-color: #c7d8a6;
     padding-top: 30px;
-
 }
 
 .wasted-food {
@@ -435,7 +494,6 @@ li {
     border-radius: 15px;
     width: 95%;
     margin: 0 auto;
-
 }
 
 .wasted-food .wasted-food-h1 {
@@ -450,12 +508,10 @@ li {
     font-size: 20px;
     font-weight: 600;
     margin-bottom: 30px;
-
 }
 
 .wasted-food div p span {
     color: #2d682d;
-
 }
 
 /* wasted food section  */
@@ -480,7 +536,6 @@ li {
     width: 60%;
     margin: 0 auto;
     text-align: center;
-
 }
 
 .memin-section .memin-text h3 {
@@ -488,19 +543,17 @@ li {
     color: #3f230f;
     font-weight: 900;
     margin-bottom: 5px;
-
 }
 
 .memin-section .memin-text p {
-    font-size: 2.2em;
+    font-size: 2em;
     justify-content: center;
     color: #3f230f;
     margin-bottom: 10px;
-
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* member includes section  */
-
 
 
 /* stay in the loop section  */
@@ -532,11 +585,11 @@ li {
     width: 500px;
     height: 25px;
     display: block;
-    /* border-bottom: 4px solid black; */
 }
 
 .stayloop-section form p span {
     text-decoration: underline;
+    font-family: 'Roboto Mono', monospace;
 }
 
 /* stay in the loop section  */
@@ -553,46 +606,40 @@ li {
     margin: 0 auto;
     display: flex;
     flex-wrap: wrap;
-    gap: 40px;
-    text-align: justify;
     padding-top: 10px;
-    /* justify-content: space-around; */
-    line-height: 50px;
+    justify-content: space-between;
 }
 
-.info-section .info-table h1{
-    color:  #9cc54a;
+
+.info-section .info-table .info-text {
+    display: flex;
+    gap: 40px;
+    text-align: justify;
+    line-height: 50px;
+    margin-bottom: 50px;
+}
+
+.info-section .info-table h1 {
+    color: #9cc54a;
     font-size: 15px;
 }
 
-.info-section .info-table p{
+.info-section .info-table p {
     color: #fff;
     font-size: 25px;
     padding-bottom: 15px;
 }
 
-/* 
-.info-section .info-table table {
-    gap: 90px;
+.info-section .info-table .icon {
+    width: 180px;
+    margin-top: 10px;
 }
 
-.info-section .info-table tr {
-    line-height: 40px;
-    display: flex;s
-}
-
-.info-section .info-table tr th {
-    font-size: 15px;
-    color: #9cc54a;
-}
-
-.info-section .info-table tr td {
+.info-section .info-table .icon div i {
     color: #fff;
-    font-size: 22px;
-} */
-
-
-
+    font-size: 25px;
+    margin-left: 15px;
+}
 
 /* information buttom section */
 
@@ -604,24 +651,17 @@ li {
     /* display: flex; */
     flex-wrap: wrap;
     gap: 40px;
-    /* border: 3px solid tomato; */
 }
 
-.info-section .buttom-section span{
+.info-section .buttom-section span {
     font-size: 15px;
     font-weight: 400;
     color: #fff;
 }
 
-.span{
+.span {
     margin-left: 20px;
 }
-
-/* .info-section .buttom-section table th {
-    font-size: 15px;
-    font-weight: 400;
-    color: #fff;
-} */
 
 .info-section .buttom-section p {
     color: #fff;

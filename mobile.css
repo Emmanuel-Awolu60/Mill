@@ -1,18 +1,14 @@
 @media screen and (max-width: 992px) {
-
-
     /* nav mobile section */
     .nav-mobile {
         display: flex;
         /* width: 100%; */
-        
+
     }
 
-        .menu{
-            display: flex;
-        }
-
-    /* nav mobile section */
+    .menu {
+        display: flex;
+    }
 
     .body-section {
         width: 99%;
@@ -22,10 +18,6 @@
 
     .body-text {
         padding-top: 100px;
-        /* display: inline-flex; */
-        /* justify-content: center; */
-        /* align-items: center; */
-
     }
 
     .body-text div {
@@ -58,7 +50,6 @@
 
     .aboutus-section .aboutus-img {
         width: 99%;
-        /* height: 500px; */
         margin: 0 auto;
         margin-bottom: 30px;
     }
@@ -78,8 +69,6 @@
 
     .wasted-food {
         display: block;
-        /* justify-content: center; */
-
     }
 
     .wasted-food .wasted-food-h1 {
@@ -98,7 +87,6 @@
         padding: 80px 50px;
     }
 
-
     .stayloop-section form input {
         width: 300px;
     }
@@ -107,7 +95,6 @@
 }
 
 @media screen and (max-width: 450px) {
-
     .nasty-trash {
         width: 98.5%;
         margin: 0 auto;
@@ -146,11 +133,11 @@
         display: block;
     }
 
-    .info-section .info-table .info-text{
+    .info-section .info-table .info-text {
         display: block;
     }
 
-    .icon{
+    .icon {
         display: block;
     }
 }
